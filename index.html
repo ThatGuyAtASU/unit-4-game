@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Crystal Collector</title>
+
+    <!--Linking in css files-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--Linking in Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    
+
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Crystal Collector!</h1>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total
+                    score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+            <div class="row"> 
+                <!--div class = "buttons"
+                    <input type="image" id="button-1"
+                src="images/diamond.jpg" alt="diamond"-->
+                <div class="col-sm">
+                    <div class ="row">
+                        <div class="col-sm">
+                            <p>Computer Guess:<span id = "computer_guess"></span></p>
+                        </div>
+                        <div class="col-sm">
+                            <p>Wins:<span id = "wins"></span></p>
+                            <P>Losses:<span id = "losses"></span></P>
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class="col-sm">
+                        <input type="image" id="button1" src="assets/images/diamond.jpg" alt="diamond">
+                        </div>
+                        <div class="col-sm">
+                        <input type="image" id="button2" src="assets/images/Emerald.jpg" alt="emerald">
+                        </div>
+                        <div class="col-sm">
+                            <input type="image" id="button3" src="assets/images/Sapphire.jpg" alt="sapphire">
+                        </div>
+                        <div class ="col-sm">
+                            <input type="image" id="button4" src="assets/images/ruby.jpg" alt="ruby">
+                        </div>
+                        
+                    </div>
+                    <div class = "row">
+                        <p>Player Guess:<span id = "user_guess"></span></p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <!--Linking in javascript-->
+        
+        <!--Linking in jquery-->
+         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         
+         <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
